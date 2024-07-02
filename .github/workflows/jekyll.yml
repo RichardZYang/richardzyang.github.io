@@ -3,7 +3,7 @@ name: Jekyll site CI
 on:
   push:
     branches:
-      - gh-pages  # or the branch you want to deploy from
+      - main  # or the branch you want to deploy from
 
 jobs:
   build:
@@ -11,16 +11,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
     - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7'  # Use the version of Ruby you need
+        ruby-version: '2.7.0'  # Ensure this matches the Ruby version in your Gemfile.lock
+
+    - name: Install Bundler
+      run: |
+        gem install bundler:2.5.12  # Use the version that created your Gemfile.lock
+
     - name: Install dependencies
       run: |
-        gem install bundler
         bundle install
+
     - name: Build the site
       run: bundle exec jekyll build
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
