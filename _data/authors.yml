@@ -26,10 +26,11 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
-    # email:           <mail@domain.tld>
+    linkedin:        richard-yang-6637a826b
+    github:          richardzyang
+    email:           richardyang2468@gmail.com
     # rss:             https://<url>/feed.xml
+    # twitter:         <username>
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
@@ -57,7 +58,6 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
