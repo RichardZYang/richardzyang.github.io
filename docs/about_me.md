@@ -19,9 +19,8 @@ I like going on outdoor adventures.
 
 These are some of my favourite initiatives I got to be a part of:
 
-
 <div class="button-container">
-  <button id="toggleButton" class="button-33">Turn Focus On</button>
+  <button id="toggleButton" class="button-33">Turn Focus Off</button>
 </div>
 <br>
 
@@ -175,7 +174,6 @@ These are some of my favourite initiatives I got to be a part of:
     updateButtonText(); // Initial button text
   });
 </script>
-
 
 [install]: install.md
 [upgrade]: upgrade.md
