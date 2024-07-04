@@ -10,6 +10,7 @@ scss: _sass/my-style.scss
 ---
 <link rel="stylesheet" href="{{ 'assets/img/css/img.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'stylesheet/textstyle.css' | relative_url }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 I study computer science at UNSW.
 
@@ -121,7 +122,6 @@ These are some of my favourite initiatives I got to be a part of:
 }
 </style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
     var fadeEnabled = true;
