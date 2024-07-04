@@ -125,6 +125,7 @@ These are some of my favourite initiatives I got to be a part of:
 <script>
   $(document).ready(function() {
     var fadeEnabled = true;
+    console.log("jQuery is loaded and ready");
 
     function applyFading() {
       var windowHeight = $(window).height();
