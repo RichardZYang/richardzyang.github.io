@@ -14,7 +14,7 @@ scss: _sass/my-style.scss
 
 I study computer science at UNSW.
 
-I used to play [competitive soccer](https://websites.mygameday.app/team_info.cgi?action=PSTATS&pID=197536283&client=1-10179-150739-399133-20390196&ocompID=399133) until I got injured in 2021 =(
+I used to play [competitive soccer](https://websites.mygameday.app/team_info.cgi?action=PSTATS&pID=197536283&client=1-10179-150739-399133-20390196&ocompID=399133) until I got injured in 2021
 
 I like going on outdoor adventures.
 
