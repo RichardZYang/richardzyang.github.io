@@ -3,6 +3,10 @@
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
 }
 
+:root {
+  --Purples: purple;
+}
+
 /* body {
   font-family: 'Rocher';
   text-align: center;
