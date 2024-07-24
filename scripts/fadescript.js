@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
   console.log("jQuery is loaded and ready");
 
   function applyFading() {

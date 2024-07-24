@@ -53,8 +53,9 @@ These are some of my favourite initiatives I got to be a part of:
     <img src="../assets/img/ST_edited.jpg" alt="Street Term" class="about_me_img">
   </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="{{ 'scripts/fadescript.js' | relative_url }}"></script>
+<script src="{{ '/scripts/fadescript.js' | relative_url }}"></script>
 
 [install]: install.md
 [upgrade]: upgrade.md
