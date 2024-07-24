@@ -19,22 +19,17 @@ I like going on outdoor adventures.
 
 These are some of my favourite initiatives I got to be a part of:
 
-<div class="button-container">
-  <button id="toggleButton" class="button-33">Turn Focus Off</button>
-</div>
-<br>
-
 <div class="image-description-container animated-text">
   <div>  
     <img src="../assets/img/cse_camp.jpg" alt="CSE Camp" class="about_me_img">
   </div>
   <div class="description-container"> 
-    <p class="description purples">CSEsoc First Year Camp Leader</p>
+    <p class="description purpletext">CSEsoc First Year Camp Leader</p>
   </div>
 </div>
 <div class="image-description-container animated-text">
   <div class="description-container"> 
-    <p class="description">Yellow Shirts O-Week Volunteer</p>
+    <p class="description purpletext">Yellow Shirt O-Week Volunteer</p>
   </div>
   <div>  
     <img src="../assets/img/YS_photo.jpg" alt="Yellow Shirts" class="about_me_img">
@@ -46,13 +41,13 @@ These are some of my favourite initiatives I got to be a part of:
     <img src="../assets/img/adsoc.JPG" alt="ADSOC" class="about_me_img">
   </div>
   <div class="description-container"> 
-    <p class="description">Adventure Society Marketing Director</p>
+    <p class="description purpletext">Adventure Society Marketing Director</p>
   </div>
 </div>
 
 <div class="image-description-container animated-text">
   <div class="description-container"> 
-    <p class="description">Street Team Senior</p>
+    <p class="description purpletext">Street Team Senior</p>
   </div>
   <div>  
     <img src="../assets/img/ST_edited.jpg" alt="Street Term" class="about_me_img">
