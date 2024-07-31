@@ -8,13 +8,22 @@ description: >
 hide_description: true
 permalink: /projects/
 ---
+<link rel="stylesheet" href="{{ 'assets/img/css/img.css' | relative_url }}">
+<link rel="stylesheet" href="{{ 'stylesheet/project_styles.css' | relative_url }}">
+<script>
+  function openLink(url) {
+    window.open(url, '_blank');
+  }
+</script>
 <!--author-->
+<div class="parent-container">
+<div class="scope">
+  <span style="--i:1" onclick="openLink('https://devpost.com/software/uplift-bi4quj')">
+  <img src="../assets/img/uplift_mainpage.jpg" alt="Uplift" class="uplift-image">
+  </span>
 
-```html
-<head>
-    <title>Project Status:</title>
-</head>
-<body>
-    <p>In progress</p>
-</body>
-```
+  <span style="--i:6" onclick="openLink('https://www.unswadsoc.com/')">
+  <img src="../assets/img/adsoc_website.png" >
+  </span>
+</div>
+</div>
