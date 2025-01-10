@@ -11,13 +11,6 @@ scss: _sass/my-style.scss
 <link rel="stylesheet" href="{{ 'assets/img/css/img.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'stylesheet/textstyle.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'stylesheet/styles.css' | relative_url }}">
-I study computer science at UNSW.
-
-I used to play [competitive soccer](https://websites.mygameday.app/team_info.cgi?action=PSTATS&pID=197536283&client=1-10179-150739-399133-20390196&ocompID=399133){:target="_blank"} until I got injured.
-
-I like going on outdoor adventures in my spare time.
-
-These are some of my favourite initiatives I got to be a part of:
 
 <div class="image-description-container animated-text">
   <div>  
