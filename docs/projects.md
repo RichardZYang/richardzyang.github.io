@@ -32,7 +32,7 @@ permalink: /projects/
           </div>
       </div>
     </a>
-    <a href="https://devpost.com/software/uplift-bi4quj" target="_blank" class="project-link">
+    <a href="https://devpost.com/software/earnit-wvalzk" target="_blank" class="project-link">
         <div class="project-card aqua">
         <div class="project-info">
             <h3 class="project-category">EarnIt</h3>
