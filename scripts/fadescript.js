@@ -12,7 +12,7 @@ $(window).ready(function() {
       var elementCenter = elementTop + (elementHeight / 2);
 
       var distanceToCenter = Math.abs(windowCenter - elementCenter);
-      var maxDistance = windowHeight / 2;
+      var maxDistance = windowHeight * 1.2;
 
       var opacity = 1 - (distanceToCenter / maxDistance);
       opacity = Math.max(0, Math.min(1, opacity));

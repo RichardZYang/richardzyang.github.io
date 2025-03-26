@@ -12,6 +12,15 @@ scss: _sass/my-style.scss
 <link rel="stylesheet" href="{{ 'stylesheet/textstyle.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'stylesheet/styles.css' | relative_url }}">
 
+<div class="about-intro animated-text">
+  <p class="description">
+    Hello, I'm Richard! <br><br>
+    I'm a final year Computer Science student studying at UNSW, working towards a career in software engineering.<br><br>
+    Feel free to check out the projects tab to see what I have recently worked on.<br><br>
+    Outside of tech, I enjoy being a part of various societies and volunteering programs to help bring students together.
+  </p>
+</div>
+
 <div class="image-description-container animated-text">
   <div>  
     <img src="../assets/img/cse_camp.jpg" alt="CSE Camp" class="about_me_img">
@@ -34,13 +43,13 @@ scss: _sass/my-style.scss
     <img src="../assets/img/adsoc.JPG" alt="ADSOC" class="about_me_img">
   </div>
   <div class="description-container"> 
-    <p class="description purpletext">Adventure Society Marketing Director</p>
+    <p class="description purpletext">Adventure Society VPO (Vice President of Operations)</p>
   </div>
 </div>
 
 <div class="image-description-container animated-text">
   <div class="description-container"> 
-    <p class="description purpletext">Street Team Senior</p>
+    <p class="description purpletext">Street Team Senior Volunteer</p>
   </div>
   <div>  
     <img src="../assets/img/ST_edited.jpg" alt="Street Term" class="about_me_img">
