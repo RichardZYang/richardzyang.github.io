@@ -21,19 +21,8 @@ permalink: /projects/
 </script>
 <!--author-->
 <div class="projects-container">
-    <a href="https://devpost.com/software/uplift-bi4quj" target="_blank" class="project-link">
-      <div class="project-card purple">
-          <div class="project-info">
-              <h3 class="project-category">UpLift</h3>
-              <h2 class="project-title">Social web app that motivates users to achieve their personalized health goals through gamified progress tracking and community accountability.</h2>
-          </div>
-          <div class="project-preview">
-              <img src="../assets/img/uplift_mainpage.jpg" alt="Project Preview">
-          </div>
-      </div>
-    </a>
-    <a href="https://devpost.com/software/earnit-wvalzk" target="_blank" class="project-link">
-        <div class="project-card aqua">
+      <a href="https://devpost.com/software/earnit-wvalzk" target="_blank" class="project-link">
+        <div class="project-card purple">
         <div class="project-info">
             <h3 class="project-category">EarnIt</h3>
             <h2 class="project-title">Chrome extension that utilizes TensorFlow MoveNet to ensure users complete productive challenges to temporarily unlock user-blocked websites.</h2>
@@ -42,6 +31,17 @@ permalink: /projects/
             <img src="../assets/img/EarnIt.png" alt="Project Preview">
         </div>
     </div>
+    </a>
+    <a href="https://devpost.com/software/uplift-bi4quj" target="_blank" class="project-link">
+      <div class="project-card aqua">
+          <div class="project-info">
+              <h3 class="project-category">UpLift</h3>
+              <h2 class="project-title">Social web app that motivates users to achieve their personalized health goals through gamified progress tracking and community accountability.</h2>
+          </div>
+          <div class="project-preview">
+              <img src="../assets/img/uplift_mainpage.jpg" alt="Project Preview">
+          </div>
+      </div>
     </a>
     <a href="https://www.unswadsoc.com/" target="_blank" class="project-link">
     <div class="project-card aqua">

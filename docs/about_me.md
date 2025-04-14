@@ -15,9 +15,9 @@ scss: _sass/my-style.scss
 <div class="about-intro animated-text">
   <p class="description">
     Hello, I'm Richard! <br><br>
-    I'm a final year Computer Science student studying at UNSW, working towards a career in software engineering.<br><br>
+    I'm a final-year Computer Science student at UNSW, currently working as a Junior Software Developer at Boomerang Studios and aspiring to build a career in software engineering.<br><br>
     Feel free to check out the projects tab to see what I have recently worked on.<br><br>
-    Outside of tech, I enjoy being a part of various societies and volunteering programs to help bring students together.
+    Outside of tech, I enjoy getting involved in various societies and volunteering programs to help bring students together.
   </p>
 </div>
 
