@@ -12,8 +12,14 @@
     margin: 1rem 0;
   }
 
-  .about_me_img {
+  .about_img {
     border-radius: 10%;  /* Adjust the radius as needed */
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   @font-face {
@@ -44,6 +50,11 @@
   .purpletext {
     font-family: Rocher;
     base-palette: 6;
+  }
+  
+  .bluetext {
+    color: #4a90e2;
+    font-weight: 600;
   }
   
   .minttext {

@@ -20,6 +20,8 @@ permalink: /projects/
   }
 </script>
 <!--author-->
+This is a selection of projects I've worked on whether through personal initiaives or competing in hackathons.
+{:.faded}
 <div class="projects-container">
       <a href="https://devpost.com/software/earnit-wvalzk" target="_blank" class="project-link">
         <div class="project-card purple">
@@ -47,7 +49,7 @@ permalink: /projects/
     <div class="project-card aqua">
         <div class="project-info">
             <h3 class="project-category">ADSOC</h3>
-            <h2 class="project-title">Dynamic website for UNSW Adventure Society, showcasing events, memberships and sponsorships.</h2>
+            <h2 class="project-title">Dynamic website for UNSW Adventure Society, showcasing events, memberships and sponsorships. Integrated Prismic CMS to allow non-technical users to make updates.</h2>
         </div>
         <div class="project-preview">
             <img src="../assets/img/adsoc_website.png" alt="Project Preview">

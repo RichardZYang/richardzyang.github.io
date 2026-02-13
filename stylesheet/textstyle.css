@@ -30,7 +30,7 @@ h1 {
 .purpletext {
   font-family: Rocher;
   base-palette: 6;
-  color: purple
+  color: rgb(112, 191, 227)
 }
 
 .minttext {
