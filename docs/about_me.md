@@ -68,99 +68,20 @@ Since graduating, I have maintained the relationships I built and continue suppo
   </div>
   
   <div class="carousel-controls">
-    <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">❮</button>
+    <button class="carousel-btn carousel-prev">❮</button>
     <div class="carousel-dots" id="dots">
       <button type="button" class="carousel-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
       <button type="button" class="carousel-dot" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
       <button type="button" class="carousel-dot" onclick="goToSlide(2)" aria-label="Go to slide 3"></button>
       <button type="button" class="carousel-dot" onclick="goToSlide(3)" aria-label="Go to slide 4"></button>
     </div>
-    <button class="carousel-btn carousel-next" onclick="changeSlide(1)">❯</button>
+    <button class="carousel-btn carousel-next">❯</button>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="{{ '/scripts/fadescript.js' | relative_url }}"></script>
-
-<script>
-let currentSlide = 0;
-let slides = [];
-let totalSlides = 0;
-let carouselReady = false;
-
-function initCarousel() {
-  slides = Array.from(document.querySelectorAll('.carousel-slide'));
-  totalSlides = slides.length;
-
-  if (totalSlides === 0) return; // Exit if no slides found
-
-  const dotsContainer = document.getElementById('dots');
-  if (dotsContainer) {
-    dotsContainer.innerHTML = '';
-    for (let i = 0; i < totalSlides; i++) {
-      const dot = document.createElement('button');
-      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-      dot.onclick = () => window.goToSlide(i);
-      dotsContainer.appendChild(dot);
-    }
-  }
-
-  carouselReady = true;
-  showSlide(0, 1);
-}
-
-function showSlide(newSlideIndex, direction = 1) {
-  if (!carouselReady) return;
-
-  // Handle boundaries
-  if (newSlideIndex >= totalSlides) newSlideIndex = 0;
-  if (newSlideIndex < 0) newSlideIndex = totalSlides - 1;
-
-  const prevSlide = slides[currentSlide];
-  const nextSlide = slides[newSlideIndex];
-
-  if (prevSlide) {
-    prevSlide.classList.remove('active');
-    prevSlide.classList.add(direction > 0 ? 'slide-out-left' : 'slide-out-right');
-  }
-
-  if (nextSlide) {
-    nextSlide.classList.remove('slide-out-left', 'slide-out-right', 'carousel-initial-right', 'carousel-initial-left');
-    nextSlide.classList.add('active', direction > 0 ? 'slide-in-right' : 'slide-in-left');
-  }
-
-  currentSlide = newSlideIndex;
-
-  document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
-    dot.classList.toggle('active', idx === currentSlide);
-  });
-}
-
-window.changeSlide = function(n) {
-  if (!carouselReady) initCarousel();
-  if (!carouselReady) return;
-  const direction = n > 0 ? 1 : -1;
-  const newSlideIndex = currentSlide + n;
-  showSlide(newSlideIndex, direction);
-}
-
-window.goToSlide = function(n) {
-  if (!carouselReady) initCarousel();
-  if (!carouselReady) return;
-  const direction = n > currentSlide ? 1 : -1;
-  showSlide(n, direction);
-}
-
-// Run on page load
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initCarousel);
-} else {
-  initCarousel();
-}
-
-// Run on Hydejack push-state navigation
-document.addEventListener('hy-push-state-load', initCarousel);
-</script>
+<script src="{{ '/scripts/carousel.js' | relative_url }}" defer></script>
 
 [install]: install.md
 [upgrade]: upgrade.md
