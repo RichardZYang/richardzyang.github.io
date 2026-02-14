@@ -83,17 +83,20 @@ Since graduating, I have maintained the relationships I built and continue suppo
 <script src="{{ '/scripts/fadescript.js' | relative_url }}"></script>
 
 <script>
+let currentSlide = 0;
+let slides = [];
+let totalSlides = 0;
+let carouselReady = false;
+
 function initCarousel() {
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.carousel-slide');
-  const totalSlides = slides.length;
-  
+  slides = Array.from(document.querySelectorAll('.carousel-slide'));
+  totalSlides = slides.length;
+
   if (totalSlides === 0) return; // Exit if no slides found
 
-  function initCarouselDots() {
-    const dotsContainer = document.getElementById('dots');
-    if (!dotsContainer) return;
-    dotsContainer.innerHTML = ''; // Clear existing dots
+  const dotsContainer = document.getElementById('dots');
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
     for (let i = 0; i < totalSlides; i++) {
       const dot = document.createElement('button');
       dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
@@ -102,45 +105,50 @@ function initCarousel() {
     }
   }
 
-  function showSlide(newSlideIndex, direction = 1) {
-    const prevSlide = slides[currentSlide];
-    
-    // Handle boundaries
-    if (newSlideIndex >= totalSlides) newSlideIndex = 0;
-    if (newSlideIndex < 0) newSlideIndex = totalSlides - 1;
-    
-    const nextSlide = slides[newSlideIndex];
-    
-    // Remove old classes
+  carouselReady = true;
+  showSlide(0, 1);
+}
+
+function showSlide(newSlideIndex, direction = 1) {
+  if (!carouselReady) return;
+
+  // Handle boundaries
+  if (newSlideIndex >= totalSlides) newSlideIndex = 0;
+  if (newSlideIndex < 0) newSlideIndex = totalSlides - 1;
+
+  const prevSlide = slides[currentSlide];
+  const nextSlide = slides[newSlideIndex];
+
+  if (prevSlide) {
     prevSlide.classList.remove('active');
     prevSlide.classList.add(direction > 0 ? 'slide-out-left' : 'slide-out-right');
-    
-    // Add new classes
+  }
+
+  if (nextSlide) {
     nextSlide.classList.remove('slide-out-left', 'slide-out-right', 'carousel-initial-right', 'carousel-initial-left');
     nextSlide.classList.add('active', direction > 0 ? 'slide-in-right' : 'slide-in-left');
-    
-    // Update global
-    currentSlide = newSlideIndex;
-    
-    // Update dots
-    document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === currentSlide);
-    });
   }
 
-  window.changeSlide = function(n) {
-    const direction = n > 0 ? 1 : -1;
-    const newSlideIndex = currentSlide + n;
-    showSlide(newSlideIndex, direction);
-  }
+  currentSlide = newSlideIndex;
 
-  window.goToSlide = function(n) {
-    const direction = n > currentSlide ? 1 : -1;
-    showSlide(n, direction);
-  }
+  document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
+    dot.classList.toggle('active', idx === currentSlide);
+  });
+}
 
-  initCarouselDots();
-  showSlide(0);
+window.changeSlide = function(n) {
+  if (!carouselReady) initCarousel();
+  if (!carouselReady) return;
+  const direction = n > 0 ? 1 : -1;
+  const newSlideIndex = currentSlide + n;
+  showSlide(newSlideIndex, direction);
+}
+
+window.goToSlide = function(n) {
+  if (!carouselReady) initCarousel();
+  if (!carouselReady) return;
+  const direction = n > currentSlide ? 1 : -1;
+  showSlide(n, direction);
 }
 
 // Run on page load
