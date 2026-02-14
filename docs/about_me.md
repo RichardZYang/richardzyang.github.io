@@ -69,7 +69,12 @@ Since graduating, I have maintained the relationships I built and continue suppo
   
   <div class="carousel-controls">
     <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">❮</button>
-    <div class="carousel-dots" id="dots"></div>
+    <div class="carousel-dots" id="dots">
+      <button type="button" class="carousel-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
+      <button type="button" class="carousel-dot" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
+      <button type="button" class="carousel-dot" onclick="goToSlide(2)" aria-label="Go to slide 3"></button>
+      <button type="button" class="carousel-dot" onclick="goToSlide(3)" aria-label="Go to slide 4"></button>
+    </div>
     <button class="carousel-btn carousel-next" onclick="changeSlide(1)">❯</button>
   </div>
 </div>
@@ -92,7 +97,7 @@ function initCarousel() {
     for (let i = 0; i < totalSlides; i++) {
       const dot = document.createElement('button');
       dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-      dot.onclick = () => goToSlide(i);
+      dot.onclick = () => window.goToSlide(i);
       dotsContainer.appendChild(dot);
     }
   }
@@ -129,7 +134,7 @@ function initCarousel() {
     showSlide(newSlideIndex, direction);
   }
 
-  function goToSlide(n) {
+  window.goToSlide = function(n) {
     const direction = n > currentSlide ? 1 : -1;
     showSlide(n, direction);
   }
@@ -144,6 +149,9 @@ if (document.readyState === 'loading') {
 } else {
   initCarousel();
 }
+
+// Run on Hydejack push-state navigation
+document.addEventListener('hy-push-state-load', initCarousel);
 </script>
 
 [install]: install.md
