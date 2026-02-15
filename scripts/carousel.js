@@ -105,10 +105,14 @@
 
     normalizeSlides();
     buildDots();
-    bindControls();
     showSlide(0, 1);
   }
 
-  document.addEventListener('DOMContentLoaded', initCarousel);
-  document.addEventListener('hy-push-state-load', initCarousel);
+  function init() {
+    initCarousel();
+    bindControls();
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('hy-push-state-load', init);
 })();

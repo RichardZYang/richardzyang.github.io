@@ -25,5 +25,5 @@ I graduated with a Bachelors of Computer Science from the University of New Sout
 ---
 
 - **[More About Me](/about_me/)** — Learn more about me outside of tech
-- **[CV](/cv/)** — Download my resume
 - **[Projects](/projects/)** — See what I've built
+- **[CV](/cv/)** — Download my resume

@@ -18,11 +18,12 @@ Learn more about me outside of tech.
   <p class="description">
 Throughout university, I actively participated in student societies and volunteering initiatives, challenging myself to step into leadership roles and help guide other students. Being able to give back to the community and support others was one of the most rewarding parts of my university experience.<br><br>
 
-Working closely with diverse groups of people helped me build strong relationships and develop my leadership, teamwork, and communication skills. These experiences shaped me into an approachable, collaborative team player who enjoys contributing to supportive and positive environments. <br><br>
+Working closely with diverse groups of people helped me build strong relationships and develop my <em style="color: #4a90e2;">leadership, teamwork, and communication</em> skills. These experiences shaped me into an approachable, collaborative team player who enjoys contributing to supportive and positive environments. <br><br>
 
 Since graduating, I have maintained the relationships I built and continue supporting community-based initiatives where I can. I value making a positive impact and strive to uphold this both professionally and personally.
 </p>
 </div>
+
 <div class="carousel-container">
   <div class="carousel-wrapper">
   <div class="description-container"> 
@@ -76,6 +77,27 @@ Since graduating, I have maintained the relationships I built and continue suppo
       <button type="button" class="carousel-dot" onclick="goToSlide(3)" aria-label="Go to slide 4"></button>
     </div>
     <button class="carousel-btn carousel-next">❯</button>
+  </div>
+</div>
+
+<div class="about-intro">
+  <p class="description">
+I've always been intrigued by sneakers, fashion, and collectibles because they bring together creativity, character, and community. Over time, I saw an opportunity to turn that interest into something more meaningful by running my own e-commerce project focused on sourcing high-demand products for enthusiasts like myself. What began as a hobby sourcing and reselling sneakers has grown into designing original products, managing online platforms, and creating content around my brand, ARCA.
+</p>
+</div>
+
+<div class="about-intro" style="display: flex; align-items: center; gap: 2rem; max-width: 900px;">
+  <p class="description" style="flex: 1;">
+Through ARCA, I've worked directly with customers and collaborators while managing product design, branding, fulfilment, and digital storefronts. Leading these efforts strengthened my <em style="color: #4a90e2;">initiative and creativity</em>, while also developing my communication and problem-solving skills with a customer first mindset.
+</p>
+  <div class="split-image-container">
+    <a href="https://www.arcacollab1.com/about-us" target="_blank" rel="noopener noreferrer" class="split-image-link">
+      <div class="split-image-wrapper">
+        <div class="split-part split-left"></div>
+        <div class="split-part split-center"></div>
+        <div class="split-part split-right"></div>
+      </div>
+    </a>
   </div>
 </div>
 
