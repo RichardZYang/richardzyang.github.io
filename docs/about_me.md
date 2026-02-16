@@ -86,9 +86,9 @@ I've always been intrigued by sneakers, fashion, and collectibles because they b
 </p>
 </div>
 
-<div class="about-intro" style="display: flex; align-items: center; gap: 2rem; max-width: 900px;">
+<div class="about-intro" style="display: flex; align-items: center; gap: 2rem; max-width: 800px; margin: 0 auto 40px auto;">
   <p class="description" style="flex: 1;">
-Through ARCA, I've worked directly with customers and collaborators while managing product design, branding, fulfilment, and digital storefronts. Leading these efforts strengthened my <em style="color: #4a90e2;">initiative and creativity</em>, while also developing my communication and problem-solving skills with a customer first mindset.
+Through ARCA, I've worked directly with customers and collaborators while managing branding, fulfilment, and digital storefronts. Leading these efforts strengthened my <em style="color: #4a90e2;">initiative and creativity</em>, while also developing my communication and problem-solving skills with a customer first mindset.
 </p>
   <div class="split-image-container">
     <a href="https://www.arcacollab1.com/about-us" target="_blank" rel="noopener noreferrer" class="split-image-link">
