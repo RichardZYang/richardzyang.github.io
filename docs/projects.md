@@ -20,7 +20,7 @@ permalink: /projects/
   }
 </script>
 <!--author-->
-This is a selection of projects I've worked on whether through personal initiaives or competing in hackathons.
+This is a selection of projects I've worked on whether through personal initiatives or competing in hackathons.
 {:.faded}
 <div class="projects-container">
       <a href="https://devpost.com/software/earnit-wvalzk" target="_blank" class="project-link">
