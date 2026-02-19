@@ -78,3 +78,16 @@ body.custom-dark .sidebar-bg {
   background-size: cover !important;
   background-position: center !important;
 }
+
+/* Notable Experiences section colors */
+body.custom-dark .greytext {
+  color: #999 !important;
+}
+
+body.custom-dark .bluetext {
+  color: #b19cd9 !important; /* Purple */
+}
+
+body.custom-dark .greentext {
+  color: #ffb088 !important; /* Peach orange */
+}
