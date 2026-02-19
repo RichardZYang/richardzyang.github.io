@@ -1,88 +1,9 @@
 <!-- Audio player for landing page -->
 <audio id="backgroundAudio" preload="auto">
-  <source src="/assets/audio/winter-morning-ambience.mp3" type="audio/mpeg">
+  <source src="{{ '/assets/audio/winter-morning-ambience.mp3' | relative_url }}" type="audio/mpeg">
 </audio>
 
-<script>
-  // Audio player for landing page - plays on sidebar hover
-  const audio = document.getElementById('backgroundAudio');
-  if (audio) {
-    audio.volume = 0.5;
-    
-    // Function to play audio
-    function playAudio() {
-      if (audio.paused) {
-        audio.muted = false;
-        audio.currentTime = 0;
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(err => console.log('Audio play failed:', err));
-        }
-      }
-    }
-    
-    // Fade out audio
-    function fadeOutAudio() {
-      if (audio && !audio.paused) {
-        let currentVolume = audio.volume;
-        const fadeInterval = setInterval(() => {
-          currentVolume -= 0.1;
-          if (currentVolume <= 0) {
-            audio.pause();
-            audio.volume = 0.5;
-            clearInterval(fadeInterval);
-          } else {
-            audio.volume = currentVolume;
-          }
-        }, 50);
-      }
-    }
-    
-    // Stop audio on navigation
-    function stopAudio() {
-      if (audio) {
-        audio.pause();
-        audio.volume = 0.5;
-      }
-    }
-    
-    // Listen for push-state navigation (link clicks)
-    const pushStateEl = document.getElementById('_pushState');
-    if (pushStateEl) {
-      pushStateEl.addEventListener('hy-push-state-start', fadeOutAudio);
-      pushStateEl.addEventListener('hy-push-state-ready', stopAudio);
-    }
-    
-    // Listen for hover on sidebar/drawer with debounce
-    let fadeTimeout;
-    setTimeout(() => {
-      const drawerEl = document.querySelector('hy-drawer');
-      const sidebarEl = document.querySelector('.sidebar');
-      
-      if (drawerEl) {
-        drawerEl.addEventListener('mouseenter', () => {
-          clearTimeout(fadeTimeout);
-          playAudio();
-        });
-        drawerEl.addEventListener('mouseleave', () => {
-          clearTimeout(fadeTimeout);
-          fadeTimeout = setTimeout(fadeOutAudio, 1000);
-        });
-      }
-      
-      if (sidebarEl) {
-        sidebarEl.addEventListener('mouseenter', () => {
-          clearTimeout(fadeTimeout);
-          playAudio();
-        });
-        sidebarEl.addEventListener('mouseleave', () => {
-          clearTimeout(fadeTimeout);
-          fadeTimeout = setTimeout(fadeOutAudio, 1000);
-        });
-      }
-    }, 100);
-  }
-</script>
+<script src="/scripts/audio.js"></script>
 
 <!-- <script>
   document.querySelector('hy-push-state').setAttribute('prefetch', '');
