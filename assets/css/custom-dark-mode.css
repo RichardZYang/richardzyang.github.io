@@ -1,0 +1,80 @@
+body.custom-dark,
+body.custom-dark #_main,
+body.custom-dark #_drawer,
+body.custom-dark .content,
+body.custom-dark .sidebar,
+body.custom-dark .navbar,
+body.custom-dark .sidebar-bg,
+body.custom-dark .page,
+body.custom-dark .page-content {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.custom-dark a,
+body.custom-dark a:visited,
+body.custom-dark .sidebar-nav-item,
+body.custom-dark .sidebar a,
+body.custom-dark .sidebar-nav-item:hover {
+  color: #fff !important;
+}
+
+body.custom-dark h1,
+body.custom-dark h2,
+body.custom-dark h3,
+body.custom-dark h4,
+body.custom-dark h5,
+body.custom-dark h6,
+body.custom-dark p,
+body.custom-dark li,
+body.custom-dark span,
+body.custom-dark small,
+body.custom-dark strong,
+body.custom-dark em {
+  color: #fff !important;
+}
+
+body.custom-dark .nav-btn svg,
+body.custom-dark .icon-menu,
+body.custom-dark .icon-search {
+  color: #999 !important;
+  fill: #999 !important;
+}
+
+body.custom-dark #_navbar,
+body.custom-dark #_navbar > .content,
+body.custom-dark .navbar,
+body.custom-dark .navbar > .content,
+body.custom-dark div#_navbar,
+body.custom-dark div.navbar {
+  background: #000 !important;
+  background-color: #000 !important;
+  background-image: none !important;
+}
+
+body.custom-dark .nav-btn-bar {
+  background: #000 !important;
+  background-color: #000 !important;
+}
+
+body.custom-dark .navbar > .content::before,
+body.custom-dark #_navbar > .content::before {
+  box-shadow: 0 0 2rem rgba(255,255,255,0.15) !important;
+}
+
+body.custom-dark #_navbar .nav-btn,
+body.custom-dark #_navbar .nav-btn svg,
+body.custom-dark #_navbar .icon-menu {
+  color: #999 !important;
+  fill: #999 !important;
+}
+
+body.custom-dark img {
+  filter: brightness(0.9) contrast(1.05);
+}
+
+body.custom-dark .sidebar-bg {
+  background-image: url("/assets/img/dusk.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
