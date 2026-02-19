@@ -59,7 +59,7 @@ body.custom-dark .nav-btn-bar {
 
 body.custom-dark .navbar > .content::before,
 body.custom-dark #_navbar > .content::before {
-  box-shadow: 0 0 2rem rgba(255,255,255,0.15) !important;
+  box-shadow: 0 0 3rem rgba(255,255,255,0.12) !important;
 }
 
 body.custom-dark #_navbar .nav-btn,
