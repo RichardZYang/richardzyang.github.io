@@ -7,6 +7,7 @@
     const navbar = document.getElementById('_navbar');
     const navbarContent = navbar ? navbar.querySelector('.content') : null;
     const navBtnBar = navbar ? navbar.querySelector('.nav-btn-bar') : null;
+    const sidebar = document.querySelector('.sidebar');
     
     if (navbar) {
       navbar.style.backgroundColor = isDark ? '#000' : '';
@@ -19,6 +20,13 @@
     if (navBtnBar) {
       navBtnBar.style.backgroundColor = isDark ? '#000' : '';
       navBtnBar.style.background = isDark ? '#000' : '';
+    }
+    if (sidebar) {
+      if (isDark) {
+        sidebar.style.backgroundImage = 'url("/assets/img/dusk.png")';
+      } else {
+        sidebar.style.backgroundImage = 'url("/assets/img/daytime.png")';
+      }
     }
   }
 
