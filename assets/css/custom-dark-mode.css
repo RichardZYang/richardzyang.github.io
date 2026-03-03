@@ -25,9 +25,9 @@ body.custom-dark h3,
 body.custom-dark h4,
 body.custom-dark h5,
 body.custom-dark h6,
-body.custom-dark p:not(.greytext):not(.bluetext):not(.greentext),
+body.custom-dark p:not(.greytext):not(.bluetext):not(.greentext):not(.section-title),
 body.custom-dark li,
-body.custom-dark span,
+body.custom-dark span:not([style*="#4a90e2"]),
 body.custom-dark small,
 body.custom-dark strong,
 body.custom-dark em {
@@ -90,4 +90,19 @@ body.custom-dark .bluetext {
 
 body.custom-dark .greentext {
   color: #ffb088 !important; /* Peach orange */
+}
+
+body.custom-dark p.section-title {
+  color: #808080 !important;
+}
+
+/* Keep homepage skill dot colors consistent in dark mode */
+body.custom-dark span.skill-dot,
+body.custom-dark .skill-dot {
+  color: #4a90e2 !important;
+}
+
+body.custom-dark .skill-item:hover span.skill-dot,
+body.custom-dark .skill-item:hover .skill-dot {
+  color: #478f19 !important;
 }

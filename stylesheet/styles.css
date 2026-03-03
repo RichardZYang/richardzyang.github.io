@@ -49,6 +49,15 @@
   margin-right: 0;
 }
 
+.carousel-container .description {
+  font-size: 0.95rem;
+}
+
+.carousel-container .bluetext,
+.carousel-container .greentext {
+  font-size: 1.2rem;
+}
+
 .bluetext {
   color: #4a90e2 !important;
   font-weight: 700;
